@@ -20,6 +20,10 @@ ul{
     list-style-type: none;
 }
 
+ul>li{
+    padding: 10px;
+}
+
 .opacity{
     opacity:0.6;
 }
@@ -77,10 +81,6 @@ ul{
     padding-top:10px;
 }
 
-ul>li{
-    padding: 10px;
-}
-
 h3>.fa-square-plus{
     padding-right: 5px;
     font-size: 25px;
@@ -116,6 +116,16 @@ button{
 
 .main-bottom{
     background-color: #444444;
+}
+
+.nav-main-bottom{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center ;
+}
+
+.greenhover:hover{
+    border-bottom: 3px solid green;
 }
 
 /*footer*/
