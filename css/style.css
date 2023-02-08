@@ -58,7 +58,7 @@ ul{
     padding-right: 1px;
 }
 
-.container-i>small, .container-i>span .playlist{
+.container-i>small, .container-i>span, .playlist{
     display: none;
 }
 
