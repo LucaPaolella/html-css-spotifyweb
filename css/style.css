@@ -93,6 +93,7 @@ h3>.fa-square-plus{
 
 .container-main-top{
     background-color: #222222;
+    height: 90px;
 }
 
 .main-top{
@@ -114,8 +115,19 @@ button{
 
 /*main-bottom*/
 
+.main-bottom>h2{
+    padding: 10px;
+}
+
+.main-bottom>small{
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
 .main-bottom{
     background-color: #444444;
+    overflow: auto;
+    max-height: calc(100% - 180px);
 }
 
 .nav-main-bottom{
@@ -128,9 +140,25 @@ button{
     border-bottom: 3px solid green;
 }
 
+.body-main-bottom{
+    flex-wrap: wrap;
+}
+
+.audio-and-title{
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+
+}
+
+.audio-and-title>img{
+    width: 215px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
 /*footer*/
 footer{
-    height: 10vh;
+    height: 90px;
 }
 
 /*@media screen and (min-width:552px) {
@@ -231,6 +259,10 @@ footer{
         font-size: 25px;
         line-height: 50px;
         padding-bottom: 30px;
+    }
+/*main bottom*/
+    .audio-and-title>img{
+        width: 180px;
     }
 }
 
