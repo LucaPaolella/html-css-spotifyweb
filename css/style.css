@@ -28,14 +28,14 @@ ul{
     opacity: 1;
 }
 
-/*header*/
+/*main-nav*/
 
 .container-nav{
     flex-direction: column;
     background-color: black;
     justify-content: space-between;
     height: 90vh;
-    width:10vw; /*probabilmente da levare*/
+    /*width:;*/ /*probabilmente da levare*/
     align-items: center;
 }
 
@@ -91,7 +91,7 @@ h3>.fa-square-plus{
     padding-bottom: 20px;
     padding-top: 20px;
     background-color: #222222;
-    width:90vw;
+    
 }
 
 button{
@@ -116,8 +116,8 @@ footer{
     
 }*/
 
-@media screen and (min-width:523px) and (max-width:640px){
-    /*header*/
+@media screen and (min-width:552px){
+    /*main-nav*/
     .container-i>small, .container-i>span{
         display: block;
     }
@@ -159,8 +159,8 @@ footer{
     }
 }
 
-@media screen and (min-width:641px) and (max-width:878px) {
-    /*header*/
+@media screen and (min-width:878px){
+    /*main-nav*/
     .container-i>small, .container-i>span{
         display: block;
     }
@@ -203,45 +203,3 @@ footer{
 }
 
 
-@media screen and (min-width:879px) {
-    /*header*/
-    .container-i>small, .container-i>span{
-        display: block;
-    }
-    
-    .playlist{
-        display: block;
-    }
-    .container-nav>nav{
-        align-items: flex-start;
-    }
-
-    .container-nav{
-        width: 200px; 
-        align-items: flex-start;
-    }
-
-    .logo{
-        font-size: 50px;
-    }
-
-    .container-i>span{
-        font-size: 16px;
-        align-items: flex-start;
-    }
-
-    .border-end{
-        border-bottom: 1px solid white;
-        padding-bottom: 10px;
-    }
-
-    .container-i>i{
-        padding-right:5px;
-    }
-
-    .logo>span{
-        font-size: 25px;
-        line-height: 50px;
-        padding-bottom: 30px;
-    }
-}
