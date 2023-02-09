@@ -305,6 +305,13 @@ footer{
         padding-bottom: 30px;
     }
 
+    .fa-arrow-down{
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 4px;
+        margin-right: 5px;
+    }
+
     /*central main*/
     .central-main{
         width: calc(100% - 230px);
