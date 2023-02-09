@@ -163,7 +163,23 @@ button{
     flex-direction: column;
     padding: 5px;
     align-items: center;
+    position: relative;
+    z-index: 1;
+}
 
+.audio-and-title>i{
+    position: absolute;
+    bottom: 35%;
+    font-size: 90px;
+    z-index: -1;
+}
+
+.audio-and-title:hover .fa-regular{
+    z-index: 1;
+}
+
+.audio-and-title:hover{
+    opacity: 0.6;
 }
 
 .audio-and-title>img{
