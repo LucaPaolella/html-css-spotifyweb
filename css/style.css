@@ -34,7 +34,7 @@ ul>li{
 
 main{
     overflow: hidden;
-    height: calc(100% - 10vh);
+    height: calc(100% - 90px);
 }
 /*main-nav*/
 
@@ -109,7 +109,7 @@ h3>.fa-square-plus{
 
 .container-main-top{
     background-color: #222222;
-    min-height: 10vh;
+    min-height: 90px;
 }
 
 .main-top{
@@ -142,7 +142,7 @@ button{
 .main-bottom{
     background-color: #444444;
     overflow: auto;
-    max-height: calc(100vh - 20vh);
+    max-height: calc(100vh - 180px);
 }
 
 .nav-main-bottom{
@@ -173,16 +173,69 @@ button{
 }
 /*footer*/
 footer{
-    height: 10vh;
+    height: 90px;
     background-color: #666666;
 }
 
 .container-footer{
     justify-content: space-between;
-    align-items: center;
-    min-height: 10vh;   
+    align-items: center; 
 }
 
+.onplay{
+    padding: 5px;
+    padding-top: 30px;
+}
+
+.onplay-img>img{
+    width: 32px;
+}
+
+.preference{
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.fa-heart:hover {
+    color: red;
+}
+
+.playline-item-container{
+    flex-direction: column;
+}
+
+.playline-item>i{
+    padding: 15px;
+}
+
+.playline-item{
+    padding-left: 20px;
+}
+
+.empty{
+    width: 20px;
+    height: 10px;
+    border-bottom: 3px solid white;
+}
+
+.empty-opacity{
+    width: 180px;
+    height: 10px;
+    border-bottom: 3px solid #999999;
+}
+
+.line>small{
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+.utilities{
+    padding-top:30px;
+}
+
+.utilities>div, .utilities-items>i{
+    padding-right: 10px;
+}
 
 /*@media screen and (min-width:552px) {
     
