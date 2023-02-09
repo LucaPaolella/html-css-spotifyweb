@@ -32,14 +32,16 @@ ul>li{
     opacity: 1;
 }
 
+/*main{
+    overflow: hidden;
+}/*
 /*main-nav*/
 
 .container-nav{
     flex-direction: column;
     background-color: black;
     justify-content: space-between;
-    height: 90vh;
-    /*width:;*/ /*probabilmente da levare*/
+    min-height: 90vh;
     align-items: center;
 }
 
@@ -73,12 +75,21 @@ ul>li{
 }
 
 .playlist{
-    overflow: auto;
-    max-height: 150px;
+    overflow-y: hidden;
+    /*max-height: 200px;*/
+}
+
+.playlist, .playlist-li-container{
+    overflow-y: auto;
+    max-height: 250px;         /*Da sistemare*/
 }
 
 .playlist, .playlist>h3{
     padding-top:10px;
+}
+
+.playlist>h3{
+    padding-bottom: 20px;
 }
 
 h3>.fa-square-plus{
@@ -93,7 +104,7 @@ h3>.fa-square-plus{
 
 .container-main-top{
     background-color: #222222;
-    height: 10vh;
+    min-height: 10vh;
 }
 
 .main-top{
@@ -110,7 +121,6 @@ button{
     border-radius: 25%;
     background-color: #222222;
     color: white;
-    
 }
 
 /*main-bottom*/
@@ -152,20 +162,22 @@ button{
 }
 
 .audio-and-title>img{
-    width: 215px;
+    width: 160px;
     padding-left: 10px;
     margin-top: 10px;
 }
 /*footer*/
 footer{
-    height: 10vh;
+    min-height: 10vh;
     background-color: #666666;
 }
 
 .container-footer{
     justify-content: space-between;
     align-items: center;
+    min-height: 10vh;   
 }
+
 
 /*@media screen and (min-width:552px) {
     
@@ -178,7 +190,8 @@ footer{
     }
     
     .playlist{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .container-nav>nav{
         align-items: flex-start;
@@ -222,16 +235,20 @@ footer{
     /*main top*/
 
     /*main bottom*/
+    .audio-and-title>img{
+        width: 170px;
+    }
 }
 
-@media screen and (min-width:878px){
+@media screen and (min-width:640px){
     /*main-nav*/
     .container-i>small, .container-i>span{
         display: block;
     }
     
     .playlist{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .container-nav>nav{
         align-items: flex-start;
@@ -270,6 +287,64 @@ footer{
     .audio-and-title>img{
         width: 180px;
     }
+
+    /*central main*/
+    .central-main{
+        width: calc(100% - 230px);
+    }
 }
 
+@media screen and (min-width:878px){
+    /*main-nav*/
+    .container-i>small, .container-i>span{
+        display: block;
+    }
+    
+    .playlist{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-nav>nav{
+        align-items: flex-start;
+        width: 230px;
+    }
+
+    .container-nav{
+        width: 230px; 
+        align-items: flex-start;
+    }
+
+    .logo{
+        font-size: 50px;
+    }
+
+    .container-i>span{
+        font-size: 16px;
+        align-items: flex-start;
+    }
+
+    .border-end{
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+    }
+
+    .container-i>i{
+        padding-right:5px;
+    }
+
+    .logo>span{
+        font-size: 25px;
+        line-height: 50px;
+        padding-bottom: 30px;
+    }
+/*main bottom*/
+    .audio-and-title>img{
+        width: 230px;
+    }
+
+    /*central main*/
+    .central-main{
+        width: calc(100% - 230px);
+    }
+}
 
