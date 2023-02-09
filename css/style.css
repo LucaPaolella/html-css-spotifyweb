@@ -205,7 +205,7 @@ footer{
 }
 
 .playline-item>i{
-    padding: 15px;
+    padding: 5px;
 }
 
 .playline-item{
@@ -213,13 +213,13 @@ footer{
 }
 
 .empty{
-    width: 20px;
+    width: 10px;
     height: 10px;
     border-bottom: 3px solid white;
 }
 
 .empty-opacity{
-    width: 180px;
+    width: 50px;
     height: 10px;
     border-bottom: 3px solid #999999;
 }
@@ -235,6 +235,10 @@ footer{
 
 .utilities>div, .utilities-items>i{
     padding-right: 10px;
+}
+
+.icon-footer{
+    font-size: 10px;
 }
 
 /*@media screen and (min-width:552px) {
@@ -296,6 +300,20 @@ footer{
     .audio-and-title>img{
         width: 170px;
     }
+
+    /*footer*/
+    
+    .empty-opacity{
+        width: 120px;
+    }
+
+    .playline-item>i{
+        padding: 8px;
+    }
+
+    .icon-footer{
+        font-size: 12px;
+    }
 }
 
 @media screen and (min-width:640px){
@@ -350,6 +368,20 @@ footer{
     .central-main{
         width: calc(100% - 230px);
     }
+
+    /*footer*/
+    
+    .empty-opacity{
+        width: 160px;
+    }
+
+    .playline-item>i{
+        padding: 10px;
+    }
+
+    .icon-footer{
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width:878px){
@@ -403,6 +435,20 @@ footer{
     /*central main*/
     .central-main{
         width: calc(100% - 230px);
+    }
+
+    /*footer*/
+    
+    .empty-opacity{
+        width: 180px;
+    }
+
+    .playline-item>i{
+        padding: 15px;
+    }
+
+    .icon-footer{
+        font-size: 17px;
     }
 }
 
