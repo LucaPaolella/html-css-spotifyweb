@@ -32,9 +32,10 @@ ul>li{
     opacity: 1;
 }
 
-/*main{
+main{
     overflow: hidden;
-}/*
+    height: calc(100% - 10vh);
+}
 /*main-nav*/
 
 .container-nav{
@@ -56,6 +57,10 @@ ul>li{
     font-size: 25px;
     padding: 5px;
     justify-content: center;
+}
+
+.profile{
+    margin-top: auto;
 }
 
 .fa-arrow-down{
@@ -168,7 +173,7 @@ button{
 }
 /*footer*/
 footer{
-    min-height: 10vh;
+    height: 10vh;
     background-color: #666666;
 }
 
